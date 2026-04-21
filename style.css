@@ -1,0 +1,114 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* GAUCHE */
+  .left {
+    background: linear-gradient(135deg, #003366, #0055aa);
+    color: white;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .photo img {
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  .job {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .info p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  
+  h3 {
+    margin-top: 25px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 6px 0;
+  }
+  
+  /* bouton */
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #25D366;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  
+  /* DROITE */
+  .right {
+    padding: 30px;
+  }
+  
+  .right h1 {
+    color: #003366;
+  }
+  
+  .section {
+    margin-bottom: 25px;
+  }
+  
+  .job-block {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #003366;
+  }
+  
+  .date {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  body {
+    background: #eef1f5;
+  }
+  .container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
+  .right p {
+    line-height: 1.6;
+  }
+  
+  .right h2 {
+    margin-bottom: 10px;
+  }
+  .job-block {
+    margin-bottom: 20px;
+  }
