@@ -10,116 +10,150 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
-   
-<div class="container">
-
-  <!-- GAUCHE -->
-  <div class="left">
-    <div class="photo">
-      <img src="moi.jpg" alt="Photo">
-    </div>
-
-    <h2>W. François OUÉDRAOGO</h2>
-    <p class="job">CISU / Gestionnaire financier</p>
-
-    <div class="info">
-      <p>Email : <a href="mailto:ouedraogowfrancois@gmail.com">ouedraogowfrancois@gmail.com</a></p>
-      <p>Téléphone : <a href="tel:+22679002076">+226 79 00 20 76</a></p>
-      <p><i class="fas fa-map-marker-alt"></i> Ouagadougou</p>
-      <p>
-        <i class="fab fa-linkedin"></i> 
-        <a href="https://linkedin.com/in/tonprofil" target="_blank">Mon profil LinkedIn</a>
-      </p>
-    </div>
-
-    <h3>Langues</h3>
-    <ul>
-      <li>Français – Courant</li>
-      <li>Anglais – Moyen</li>
-      <li>Moore – Excellent</li>
-    </ul>
-
-    <h3>Compétences</h3>
-    <ul>
-      <li>Gestion budgétaire</li>
-      <li>Contrôle interne</li>
-      <li>Marchés publics</li>
-      <li>Gestion des stocks</li>
-      <li>Développement web</li>
-    </ul>
-
-    <h3>Qualités</h3>
-    <ul>
-      <li>Rigueur</li>
-      <li>Ponctualité</li>
-      <li>Loyauté</li>
-    </ul>
-
-    <a class="btn" href="https://wa.me/22679002076" target="_blank">
-      <i class="fab fa-whatsapp"></i> Contact rapide WhatsApp
-    </a>
-    <a class="btn" href="cv_francois.pdf" download>
-      📥 Télécharger mon CV
-    </a>
-  </div>
-
-  <!-- DROITE -->
-  <div class="right">
-
-    <h1>Conseiller d’Intendance Scolaire et Universitaire (CISU)</h1>
-<p class="subtitle">Spécialiste en gestion financière passation des marchés et contrôle interne</p>
-
-    <div class="section">
-      <h2>Profil</h2>
-      <p>
-        Professionnel expérimenté en gestion administrative et financière, 
-        spécialisé en contrôle interne, gestion budgétaire et optimisation des procédures. 
-        Capacité avérée à accompagner la prise de décision et à améliorer la performance des services publics.
-        <strong>Plus de 10 ans d’expérience au service de l’efficacité des institutions publiques.</strong>
-        </p>
-    </div>
-
-    <div class="section">
-      <h2>Expériences professionnelles</h2>
-
-      <div class="job-block">
-        <h4>Chargé d’Études – CNRST (2026 - Aujourd’hui)</h4>
-        <p>Analyse des données stratégiques, production de documents, pilotage des projets  et appui technique.</p>
-      </div>
-
-      <div class="job-block">
-        <h4>Contrôleur interne – CNRST (2023 - 2026)</h4>
-        <p>Contrôle interne, cartographie des risques, suivi-évaluation des recommandations, appui-conseil.</p> 
-      </div>
-
-      <div class="job-block">
-        <h4>Agent comptable – CENOU (2021 - 2021)</h4>
-        <p>Traitement des pièces comptables, vérification des dépenses, suivi budgétaire.</p>
-      </div>
-
-      <div class="job-block">
-        <h4>Chef de service budgétaire – MATDS (2013 - 2018)</h4>
-        <p>Préparation et planification budgétaire, pilotage et suivi de l'exécution, appui-conseil et management des services.</p>
-      </div>
-
-      <div class="job-block">
-        <h4>Responsable des marchés publics – Mairie Boussouma (2011 - 2013)</h4>
-        <p>Conduite du processus de planification, d'achat et de suivi des marchés publics.</p>
-      </div>
-
-    </div>
-
-    <div class="section">
-      <h2>Formation</h2>
-      <p>ENAM – CISU </p>
-    </div>
-
+<script>
+  const toggle = document.getElementById("darkModeToggle");
   
+  toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+  
+      if (document.body.classList.contains("dark")) {
+          toggle.textContent = "☀️ Mode clair";
+      } else {
+          toggle.textContent = "🌙 Mode sombre";
+      }
+  });
+  </script>
+  <body>
 
-  </div>
+  <div class="container">
+  
+    <!-- GAUCHE -->
+    <div class="left">
+      <div class="photo">
+        <img src="moi.jpg" alt="Photo">
+      </div>
+  
+      <h2>W. François OUÉDRAOGO</h2>
+      <p class="job">CISU / Gestionnaire financier</p>
+  
+      <div class="info">
+        <p>Email : <a href="mailto:ouedraogowfrancois@gmail.com">ouedraogowfrancois@gmail.com</a></p>
+        <p>Téléphone : <a href="tel:+22679002076">+226 79 00 20 76</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Ouagadougou</p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/tonprofil" target="_blank">Mon profil LinkedIn</a></p>
+      </div>
+  
+      <h3>Langues</h3>
 
+<div class="skill">
+  <p>Français</p>
+  <div class="bar"><div class="level lang1"></div></div>
 </div>
 
-</body>
-</html>
+<div class="skill">
+  <p>Anglais</p>
+  <div class="bar"><div class="level lang2"></div></div>
+</div>
+
+<div class="skill">
+  <p>Moore</p>
+  <div class="bar"><div class="level lang3"></div></div>
+</div>
+  
+      <h3>Compétences</h3>
+
+      <div class="skill">
+        <p>Gestion budgétaire</p>
+        <div class="bar"><div class="level level1"></div></div>
+      </div>
+      
+      <div class="skill">
+        <p>Contrôle interne</p>
+        <div class="bar"><div class="level level2"></div></div>
+      </div>
+      
+      <div class="skill">
+        <p>Marchés publics</p>
+        <div class="bar"><div class="level level3"></div></div>
+      </div>
+      
+      <div class="skill">
+        <p>Gestion des stocks</p>
+        <div class="bar"><div class="level level4"></div></div>
+      </div>
+      
+      <div class="skill">
+        <p>Développement web</p>
+        <div class="bar"><div class="level level5"></div></div>
+      </div>
+  
+      <h3>Qualités</h3>
+      <ul>
+        <li>Rigueur</li>
+        <li>Ponctualité</li>
+        <li>Loyauté</li>
+      </ul>
+  
+      <a class="btn" href="https://wa.me/22679002076" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contact rapide WhatsApp
+      </a>
+  
+      <a class="btn" href="cv_francois.pdf" download>
+        📥 Télécharger mon CV
+      </a>
+    </div>
+  
+    <!-- DROITE -->
+    <div class="right"><button id="darkModeToggle">🌙 Mode sombre</button>
+      <h1>Conseiller d’Intendance Scolaire et Universitaire (CISU)</h1>
+      <p class="subtitle">Spécialiste en gestion financière, passation des marchés et contrôle interne</p>
+  
+      <div class="section fade-in">
+        <h2>Profil</h2>
+        <p>
+          Professionnel expérimenté en gestion administrative et financière,
+          spécialisé en contrôle interne, gestion budgétaire et optimisation des procédures.
+          Capacité avérée à accompagner la prise de décision et à améliorer la performance des services publics.
+          <strong>Plus de 10 ans d’expérience au service de l’efficacité des institutions publiques.</strong>
+        </p>
+      </div>
+  
+      <div class="section fade-in">
+        <h2>Expériences professionnelles</h2>
+  
+        <div class="job-block">
+          <h4>Chargé d’Études – CNRST (2026 - Aujourd’hui)</h4>
+          <p>Analyse des données stratégiques, production de documents, pilotage des projets et appui technique.</p>
+        </div>
+  
+        <div class="job-block">
+          <h4>Contrôleur interne – CNRST (2023 - 2026)</h4>
+          <p>Contrôle interne, cartographie des risques, suivi-évaluation des recommandations, appui-conseil.</p>
+        </div>
+  
+        <div class="job-block">
+          <h4>Agent comptable – CENOU (2021)</h4>
+          <p>Traitement des pièces comptables, vérification des dépenses, suivi budgétaire.</p>
+        </div>
+  
+        <div class="job-block">
+          <h4>Chef de service budgétaire – MATDS (2013 - 2018)</h4>
+          <p>Préparation et planification budgétaire, pilotage et suivi de l'exécution, appui-conseil et management des services.</p>
+        </div>
+  
+        <div class="job-block">
+          <h4>Responsable des marchés publics – Mairie Boussouma (2011 - 2013)</h4>
+          <p>Conduite du processus de planification, d'achat et de suivi des marchés publics.</p>
+        </div>
+      </div>
+  
+      <div class="section fade-in">
+        <h2>Formation</h2>
+        <p>ENAM – CISU</p>
+      </div>
+    </div>
+  
+  </div>
+  
+  </body>
+  </html>
